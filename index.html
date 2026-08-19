@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sharma LLC - Technical Consulting</title>
+
+    <!-- CSS: This section controls the appearance of the page -->
+    <style>
+        /* California beach-inspired colors:
+           blue = ocean, turquoise = water, green = coastal landscape */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #174A5B;
+            background-color: #F2FBFA;
+        }
+
+        /* Simple navigation bar */
+        nav {
+            background-color: #006994;
+            padding: 15px 40px;
+        }
+
+        /* Navigation links are clickable */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #7FC8C0;
+        }
+
+        /* Main page content */
+        main {
+            margin: 40px;
+        }
+
+        /* Business name */
+        h1 {
+            color: #006994;
+        }
+
+        /* Section headings */
+        h2 {
+            color: #008C95;
+        }
+
+        /* Make the main paragraph a little bigger */
+        .description {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 850px;
+        }
+
+        /* Add a little space between bullet points */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Button appearance */
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #008C95;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #007F66;
+        }
+
+        /* Contact form starts hidden */
+        #contactForm {
+            display: none;
+            margin-top: 25px;
+            max-width: 650px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #45B8A8;
+            border-radius: 5px;
+        }
+
+        /* Form labels */
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* Form fields */
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            font-size: 15px;
+            border: 1px solid #7FC8C0;
+            border-radius: 3px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .required {
+            color: #B00000;
+        }
+
+        .consent {
+            font-weight: normal;
+        }
+
+        /* Personalized thank-you message */
+        #formMessage {
+            color: #007F66;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* These sections can be reached by clicking the navigation links */
+        .info-section {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #45B8A8;
+            max-width: 850px;
+        }
+	/* Simple boxes for the Services section */
+.box {
+    background-color: white;
+    border: 1px solid #7FC8C0;
+    border-radius: 6px;
+    padding: 18px;
+    margin: 15px 0;
+    max-width: 800px;
+}
+
+.box h3 {
+    color: #007F66;
+}
+	/* Footer */
+footer {
+    margin-top: 60px;
+    padding: 30px 40px;
+    background-color: #006994;
+    color: white;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #7FC8C0;
+}
+    </style>
+</head>
+	
+<body>
+
+    <!-- HTML: This navigation bar contains clickable page links -->
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#who-we-are">Who We Are</a>
+    <a href="#what-we-do">What We Do</a>
+    <a href="#services">Services</a>
+    <a href="#industries">Industries</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <main id="home">
+
+        <!-- Business name -->
+        <h1>Sharma LLC</h1>
+
+        <!-- Short headline -->
+        <h2>Technical Expertise for Innovative Businesses</h2>
+
+        <!-- Business description -->
+        <p class="description">
+            Sharma LLC provides practical technical consulting services to help
+            organizations accelerate product development, strengthen engineering
+            operations, reduce technical risk, and transform innovative ideas into
+            scalable, market-ready solutions.
+        </p>
+
+        <!-- Five services -->
+        <ul>
+            <li>Technology and Product Development</li>
+            <li>R&amp;D and Engineering Leadership</li>
+            <li>Operations Optimization</li>
+            <li>Commercialization Strategy</li>
+            <li>Technical Advisory for Startups</li>
+        </ul>
+
+        <!-- WHO WE ARE section -->
+        <section id="who-we-are" class="info-section">
+            <h2>Who We Are</h2>
+
+            <p class="description">
+                Sharma LLC is a technical consulting partner focused on helping
+                organizations innovate faster, build strong technical foundations,
+                and reduce technical risk. We work with startup founders, CTOs,
+                R&amp;D leaders, and engineering executives in biotech,
+                semiconductors, optics, and microelectronics.
+            </p>
+
+            <p class="description">
+                Our approach combines deep technical expertise with strategic
+                business insight and personalized engagement.
+            </p>
+        </section>
+
+        <!-- WHAT WE DO section -->
+        <section id="what-we-do" class="info-section">
+            <h2>What We Do</h2>
+
+            <p class="description">
+                We provide practical, end-to-end technical support across product
+                development, engineering, operations, and commercialization.
+            </p>
+
+            <ul>
+                <li>Technology and Product Development – road mapping, prototyping, and system integration</li>
+                <li>R&amp;D and Engineering Leadership – process design, team development, and lab or infrastructure setup</li>
+                <li>Operations Optimization – automation strategies, manufacturing scale-up, and efficiency improvements</li>
+                <li>Commercialization Strategy – go-to-market planning, cost reduction, and investor or funding preparation</li>
+                <li>Technical Advisory for Startups – due diligence, technical hiring guidance, and product validation</li>
+            </ul>
+        </section>
+<!-- SERVICES SECTION -->
+<section id="services" class="section">
+    <h2>Services</h2>
+
+    <div class="box">
+        <h3>Technology & Product Development</h3>
+        <p>
+            Road mapping, prototyping, and system integration to help
+            transform innovative ideas into practical solutions.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3>R&D and Engineering Leadership</h3>
+        <p>
+            Process design, team development, and lab or infrastructure
+            setup to strengthen technical operations.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3>Operations Optimization</h3>
+        <p>
+            Automation strategies, manufacturing scale-up, and efficiency
+            improvements.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3>Commercialization Strategy</h3>
+        <p>
+            Go-to-market planning, cost reduction, and investor or
+            funding preparation.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3>Technical Advisory for Startups</h3>
+        <p>
+            Due diligence, technical hiring guidance, and product
+            validation.
+        </p>
+    </div>
+</section>
+<!-- INDUSTRIES SECTION -->
+<section id="industries" class="section">
+    <h2>Industries We Serve</h2>
+
+    <p class="description">
+        Sharma LLC provides technical consulting support to
+        organizations working in technology-driven industries.
+    </p>
+
+    <ul>
+        <li>Biotechnology</li>
+        <li>Semiconductors</li>
+        <li>Optics</li>
+        <li>Microelectronics</li>
+    </ul>
+</section>
+<!-- WHY US SECTION -->
+<section id="why-us" class="section">
+    <h2>Why Sharma LLC?</h2>
+
+    <p class="description">
+        Sharma LLC combines deep technical expertise with strategic
+        business insight to provide practical, end-to-end solutions.
+    </p>
+
+    <p class="description">
+        We help organizations move faster, reduce technical risk,
+        and build strong technical foundations for growth.
+    </p>
+</section>
+        <!-- Clicking this button displays the contact form -->
+        <button type="button" onclick="showContactForm()">Get in Touch</button>
+
+        <!-- CONTACT FORM
+             It is hidden until the visitor clicks Get in Touch. -->
+        <div id="contactForm">
+
+            <h2>Interested in connecting with us?</h2>
+
+            <p><strong>* Required fields</strong></p>
+            <p>Please complete the following information:</p>
+
+            <!-- First Name -->
+            <label for="firstName">
+                First Name <span class="required">*</span>
+            </label>
+            <input type="text" id="firstName" placeholder="Example: Jane">
+
+            <!-- Last Name -->
+            <label for="lastName">
+                Last Name <span class="required">*</span>
+            </label>
+            <input type="text" id="lastName" placeholder="Example: Smith">
+
+            <!-- Email -->
+            <label for="email">
+                Email <span class="required">*</span>
+            </label>
+            <input type="email" id="email"
+                   placeholder="Example: jane.smith@xxx.com">
+
+            <!-- Type of Request -->
+            <label for="requestType">
+                Type of request <span class="required">*</span>
+            </label>
+
+            <select id="requestType">
+                <option value="">Enter your choice</option>
+                <option value="consulting">Technical Consulting</option>
+                <option value="product">Product Development</option>
+                <option value="engineering">R&amp;D / Engineering</option>
+                <option value="operations">Operations Optimization</option>
+                <option value="commercialization">Commercialization Strategy</option>
+                <option value="startup">Startup Technical Advisory</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p>
+                Additional fields may be presented once you select items from the list.
+            </p>
+
+            <!-- Subject -->
+            <label for="subject">
+                Subject <span class="required">*</span>
+            </label>
+            <input type="text" id="subject"
+                   placeholder="Type the purpose of your request.">
+
+            <!-- Message -->
+            <label for="message">
+                Message <span class="required">*</span>
+            </label>
+            <textarea id="message"
+                      placeholder="Type your message here."></textarea>
+
+            <!-- Consent -->
+            <label class="consent">
+                <input type="checkbox" id="consent">
+                Consent <span class="required">*</span>
+            </label>
+
+            <p>
+                By ticking this box you agree to our Data Protection Policy.
+                For more information on the processing of your personal data and
+                the exercise of your rights, please consult our privacy policy.
+            </p>
+
+            <!-- Submit button -->
+            <button type="button" onclick="submitForm()">Submit</button>
+
+            <!-- JavaScript puts the personalized message here -->
+            <p id="formMessage"></p>
+        </div>
+
+    </main>
+
+    <!-- JavaScript: This section makes the page interactive -->
+    <script>
+
+        // Show the contact form when Get in Touch is clicked.
+        function showContactForm() {
+            document.getElementById("contactForm").style.display = "block";
+        }
+
+        // Check the form and create a personalized thank-you message.
+        function submitForm() {
+
+            // Get the visitor's first name.
+            var firstName = document.getElementById("firstName").value;
+
+            // Check all required fields.
+            if (
+                firstName === "" ||
+                document.getElementById("lastName").value === "" ||
+                document.getElementById("email").value === "" ||
+                document.getElementById("requestType").value === "" ||
+                document.getElementById("subject").value === "" ||
+                document.getElementById("message").value === "" ||
+                !document.getElementById("consent").checked
+            ) {
+                alert("Please complete all required fields.");
+                return;
+            }
+
+            // Create a personalized thank-you message.
+            document.getElementById("formMessage").textContent =
+                "Thank you, " + firstName +
+                "! We have received your information and we will contact you soon.";
+        }
+
+    </script>
+<!-- FOOTER -->
+<footer>
+    <h2>Connect With Us</h2>
+
+    <!-- Replace # with your real social media links later -->
+    <p>
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/kaushikkirti2020/" target="_blank">Instagram</a>
+    </p>
+
+    <p>
+        Sharma LLC | Technical Consulting & Advisory Services
+    </p>
+
+    <p>
+        &copy; 2026 Sharma LLC. All rights reserved.
+    </p>
+</footer>
+	
+
+</body>
+</html>
